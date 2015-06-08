@@ -7,16 +7,18 @@
       .outer {
       background-color: blue;
       padding: 10px;
-      width: 50%;
+      width: 17%;
       }
 
-      div.outer div#inner {
+      div.outer div#inner { /*"." specifies class, #=ID, div#inner must be within div.outer to match elements*/
       background-color: red;
-      margin: 10px;
-      padding: 20px;
+      margin: 10px auto; /*space between elements "containers"*/
+      padding: 20px; /*Space between content and border*/
+	  width: 140px;
       border-color: green;
       border-width: 5px;
-      border-style: solid
+      border-style: solid;
+	  text-align: center;
       }
     </style>
     <h1>Hello Nessa!</h1>
@@ -24,10 +26,11 @@
     <h3>Hello Nessa!</h3>
     <h4>Hello Nessa!</h4>
     <h5>Hello Nessa!</h5>
-    <div class="outer">
+    <div class="outer"> <!--container space  -->
       <div id="inner">
 	Anything can go here<br />
 	And a new line
+	<div>more suff</div>
       </div>
     </div>
   </body>
